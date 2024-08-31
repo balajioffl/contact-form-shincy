@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+   
+<div class="head">
+    <h1>Contact Us</h1>
+    <hr>
+</div>
+
+<div class="container">
+
+        <div id="myBtn"> 
+        <input type="submit" class="button" value="Click Here">
+        <br><br>
+        </div>
+
+        <div id="myModal">
+        <form>
+        <div class="info">
+
+            <div class="icon">
+               <button><i class="fa-solid fa-xmark"></i></button> 
+            </div>
+
+            <div class="label">
+            <input type="text" name="name" id="name">
+            <label for="name">Name</label><br><br><br>
+            </div>
+            
+            <div class="label"> 
+            <input type="email" name="email" id="email">
+            <label for="email">Email</label><br><br><br>
+            </div>
+
+            <div class="label">
+            <textarea value="message" id="message" ></textarea> 
+            <label for="message">Message</label>  <br> <br><br>
+            </div>
+
+            <div>
+            <input type="submit" class="send" value="send">
+            </div>
+
+            </div>
+        </form>
+       </div>
+    </div>
+</div>
+
+
+</form>
+
+<script>
+    var modal = document.getElementById("myModal");
+    var btn = document.getElementById("myBtn");
+    var span = document.getElementsByClassName("icon")[0];
+
+    btn.click = function() {
+        modal.style.display = "block";
+     }
+    console.log(btn);
+
+    btn.addEventListener("click",()=>{
+        modal.style.display = "block";
+    })
+         span.onclick = function() {
+         modal.style.display = "none";
+     }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

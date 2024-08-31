@@ -1,0 +1,134 @@
+
+.head{
+    text-align: center;
+    padding: 20px;   
+    position: sticky;
+}
+h1{
+    color: rgb(0, 0, 61);
+}
+body{
+    background-color: #6a9ac4;  
+}
+
+.button{
+    background-color:rgb(0, 0, 95);
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    color:rgb(255, 255, 255);
+    border-radius: 10px; 
+ }
+
+#myBtn{
+    text-align: center;
+    padding-top: 30%;
+    
+}
+
+#myModal{
+    margin:100px auto;
+    position:fixed;
+    width:100%;
+    top: 0%;
+    left:0%;
+    background-color:rgba(14, 12, 12,0.7);
+    margin:auto;
+}
+
+.info{
+    margin: 110px auto;
+    width:500px;
+    background-color: white;
+    padding:50px; 
+}
+
+form{
+    width: 50%;
+    margin-left:330px;
+}
+.info>div{
+    position: relative;
+}
+
+.container{
+    background-color: rgb(191, 226, 238);
+    width: 400px; 
+    height: 300px; 
+    margin:100px auto;
+    border-radius: 10px;
+}
+
+.label label{
+     position: absolute;
+     top:5px;
+     left: 7px;
+}
+
+.button:hover{
+    background-color: black;
+}
+
+.send:hover{
+    background-color: black;
+}
+
+#myModal{
+    text-align: center;
+    display: none;
+} 
+
+
+textarea:focus+label{
+    position: absolute;
+    top:-18px;
+}
+
+input:focus+label{
+    position: absolute;
+    top:-18px;
+}
+
+.send{
+    background-color:rgb(0, 0, 54);
+    border: none;
+    padding: 10px 28px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    color:rgb(255, 255, 255);
+    border-radius: 10px; 
+}
+
+#name{
+    border-radius: 7px;
+    border: 1px solid black;
+    height: 30px;
+    width: 100%;
+    padding: 7px;
+}
+
+#email{
+    border-radius: 7px;
+    border: 1px solid black;
+    height: 30px;
+    width: 100%;
+    padding: 7px;
+}
+
+#message {
+    border-radius: 7px;
+    border: 1px solid black;
+    height: 50px;
+    width: 100%;
+    padding:7px;
+}
+
+.icon{
+    position: absolute;
+    left:250px;
+    bottom:35px
+}
+
